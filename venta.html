@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>  
+
+<head>  
+    <link rel="stylesheet" href="styles-venta.css">
+    <meta charset="UTF-8">
+    <title>Elige tus asientos para la funcion</title>
+    <link rel="icon" href="logo-pagina.jpg">
+</head>
+
+<body style="background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">  
+
+<div class="venta" style="text-align: center;
+background-color: beige; border-radius: 5px;"> 
+    <h1> ELIGE TUS ASIENTOS </h1>
+</div>
+
+<a class="navbar-brand" href="index.html"> <img src="logo-pagina.jpg" style="width: 150px; height: 100px; border-radius: 10px; margin-right: 10px; margin-top: 18px; ;"> </a>
+
+<!--Asientos-->
+<div> 
+    <div class="movie-container">
+        <label>Fechas Disponibles</label>
+        <select id="movie">
+            <option value="650">10.10.22 - 20:00 hrs</option>
+            <option value="850">12.11.22 - 16:00 hrs</option>
+            <option value="550">27.12.22 - 21:00 hrs </option>
+            <option value="750">14.08.22 - 19:00 hrs </option>
+            <option value="750">19.03.22 - 15:00 hrs </option>
+            <option value="750">09.06.22 - 21:00 hrs</option>
+            <option value="750">01.11.22 - 18:00 hrs</option>
+            <option value="750">25.09.22 - 11:00 hrs </option>
+        </select>
+    </div>
+
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Seleccionado</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Ocupado</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="movie-screen">
+            <img src='cinema-screen.jpg' alt='screen' />
+        </div>
+
+        <div class="row-container">
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <h5 class='subtitle'>Normal - 4500$</h5>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+            </div>
+            <h5 class='subtitle'>Premium - 7000$</h5>
+
+            <div class="text-wrapper">
+                <p class="text">Asientos Seleccionados <span id='count'>0</span>
+                    <p class="text">Precio Total<span id="total">0</span></p>
+            </div>
+        </div>
+
+        <a href="#"> 
+            <button type="button" class="compra">Comprar</button>
+        </a>
+        
+
+    </div>
+
+
+    <!-- <div class="text-wrapper">
+        <p class="text">Selected Seats <span id='count'>0</span>
+            <p class="text">Total Price ₹<span id="total">0</span></p>
+    </div> -->
+
+    <script src='script.js'></script>
+</div>
+
+
+</body>
+
+</html>
